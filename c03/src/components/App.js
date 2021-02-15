@@ -191,9 +191,7 @@ let posts = [
 */
 
 /* Homework 03
-  1. Create Posts component and display the data from the given posts array. (ex.1 <Posts posts={posts}/>)
-  2. Implement typechecking for the props in the Posts component. 
-  3. Remove the parameter from Posts component (ex.2 <Posts />). See what happens and handle the problem.
+  1. Create Posts component and display the data from the given posts array. 
 */
 
 export default App;
