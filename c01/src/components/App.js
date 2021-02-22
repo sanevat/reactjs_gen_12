@@ -2,9 +2,24 @@ import React from 'react';
 import Goodbye from './Goodbye';
 
 /* class App extends React.Component {
+  
+  constructor() {
+    super();
+    let name = 'Ivana';
+    let user = {};
+  };
+
+  componentDidMount() {
+    // fetch user data
+    user = {
+      name: 'Ivana'
+    };
+  };
+
   render() {
     return (
-      <h2>Hello from class component</h2>
+      <h2>Hello from class component </h2>
+      <p>{this.user.name && this.user.name}</p>
     )
   }
 }; */
