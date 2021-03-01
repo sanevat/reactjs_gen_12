@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 // components
 import UserDetailsWrapper from './UserDetailsWrapper';
+import Login from './widgets/Login';
 // contexts
 import { userDetailsContext } from '../data/contexts/userDetailsContext';
 
@@ -42,10 +43,13 @@ const App = () => {
         :
         <button onClick={onClickDecrement}>-</button>
       } */}
-      <userDetailsContext.Provider value={userDetails}>
+      {/* <userDetailsContext.Provider value={userDetails}>
         {/* <UserDetailsWrapper data={userDetails} /> */}
-        <UserDetailsWrapper />
-      </userDetailsContext.Provider>
+      {/*<UserDetailsWrapper />
+      </userDetailsContext.Provider> */}
+
+      {/* Task 01 - Imlement simple login form */}
+      <Login />
     </div>
   );
 };
