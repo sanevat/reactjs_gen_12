@@ -1,6 +1,32 @@
-const  App = () => {
+// vendor imports 
+import { useState } from 'react';
+// components
+import ToDoList from './ToDoList';
+
+const App = () => {
+  const [todos, setTodos] = useState([
+    { id: 1, task: "Listen React Course", done: false },
+    { id: 2, task: "Eat Dinner", done: false },
+    { id: 3, task: "Go to Sleep", done: false }
+  ]);
+
+  const markTodoAsDone = (index) => {
+    let todoList = todos.map((todo, i) => {
+      if(index === i) {
+        return {
+          ...todo,
+          done: !todo.done
+        } 
+      } else {
+        return todo;
+      }
+    });
+    setTodos(todoList);
+  };
+
   return (
     <div className='app'>
+      <ToDoList todos={todos} toggleToDo={markTodoAsDone} />
     </div>
   );
 };
